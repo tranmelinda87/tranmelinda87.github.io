@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大巴车强㢨thepro：车队调度源码一套搞定排班与结算</title>
+<meta name="keywords" content="大巴车强㢨thepro,大巴调度源码,包车管理系统,车队排班系统,客运管理程序">
+<meta name="description" content="大巴车强㢨thepro 是一套面向客运车队与包车商家的调度管理源码，覆盖车辆档案、司机排班、订单派单、行程跟踪、费用结算与发票管理等全流程。系统采用 B/S 架构，部署后即可在 PC 与手机端同时使用，支持多站点、多线路、多班次并行管理，内置 GPS 定位接口与乘客短信通知模块。">
+<link rel="canonical" href="https://dbcqht.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="大巴车强㢨thepro：车队调度源码一套搞定排班与结算">
+<meta property="og:description" content="大巴车强㢨thepro 是一套面向客运车队与包车商家的调度管理源码，覆盖车辆档案、司机排班、订单派单、行程跟踪、费用结算与发票管理等全流程。系统采用 B/S 架构，部署后即可在 PC 与手机端同时使用，支持多站点、多线路、多班次并行管理，内置 GPS 定位接口与乘客短信通知模块。源码完整开放，无加密无授权限制，可按自有品牌二次开发，配套部署文档与安装脚本。">
+<meta property="og:url" content="https://dbcqht.pages.dev/">
+<meta property="og:site_name" content="大巴车强㢨thepro">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="大巴车强㢨thepro：车队调度源码一套搞定排班与结算">
+<meta name="twitter:description" content="大巴车强㢨thepro 面向客运车队与包车商家，覆盖排班、派单、跟踪、结算全流程，源码完整开放可二次开发，配套部署文档与安装脚本。">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"大巴车强㢨thepro",
+  "url":"https://dbcqht.pages.dev/",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web",
+  "description":"大巴车强㢨thepro 是面向客运车队与包车商家的调度管理源码，覆盖车辆档案、司机排班、订单派单、行程跟踪、费用结算全流程，源码完整开放，支持二次开发与自有品牌部署。",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"CNY","availability":"https://schema.org/InStock"}
+}
+</script>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://dbcqht.pages.dev/","title":"大巴车强㢨thepro：车队调度源码一套搞定排班与结算","pubDate":"2026-10-25T22:03:46","upDate":"2026-10-25T22:03:46"}</script>
+<link rel="stylesheet" href="assets/ss3t7r.css">
+</head>
+<body>
+
+<header class="navbar-custom">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="logo" href="#top"><span class="logo-ico">巴</span>大巴车强㢨thepro</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#top" class="active">首页</a></li>
+        <li><a href="#fuwu">包车调度</a></li>
+        <li><a href="#paike">班线排班</a></li>
+        <li><a href="#jiesuan">结算对账</a></li>
+        <li><a href="#jiemi">源码交付</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn-ghost" href="#jiemi">获取源码</a>
+        <a class="btn-brand" href="#cta">咨询方案</a>
+        <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="container">
+    <span class="kicker">客运车队数字化调度系统 · 源码全开放</span>
+    <h1>大巴车强㢨thepro：人工排班表该退休了，<strong>一套源码</strong>管住车、人、钱三条线</h1>
+    <p class="lead">车辆档案、司机排班、订单派单、行程跟踪、费用结算全部装进同一个后台。B/S 架构部署即用，PC 与手机端同步操作，支持多站点、多线路、多班次并行调度，GPS 定位与乘客短信通知模块开箱即连。</p>
+    <div class="hero-cta">
+      <a class="btn-brand" href="#fuwu">查看功能清单</a>
+      <a class="btn-danger" href="#cta">索取部署报价</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>200+</b><span>已交付车队客户</span></div>
+      <div class="stat"><b>15 分钟</b><span>标准化环境安装耗时</span></div>
+      <div class="stat"><b>0 加密</b><span>全源码开放无授权锁</span></div>
+      <div class="stat"><b>31 项</b><span>内置调度管理模块</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="fuwu">
+  <div class="container">
+    <div class="sec-head">
+      <h2>调度全流程，一个后台跑通</h2>
+      <p>从接到包车电话到开出结算单，每个环节都有对应模块承接</p>
+    </div>
+    <div class="card-grid">
+      <div class="card-x">
+        <div class="ico">🚌</div>
+        <h3>车辆与司机档案</h3>
+        <p>车牌、座位数、保险年检、驾照类型、从业资格证统一建库，到期自动预警，杜绝带病车上路。</p>
+        <a class="more" href="#paike">查看排班能力 →</a>
+      </div>
+      <div class="card-x">
+        <div class="ico">📅</div>
+        <h3>智能排班与派单</h3>
+        <p>按线路、日期、时段自动匹配空闲车辆与司机，冲突检测提前拦截，改派一键完成并同步通知。</p>
+        <a class="more" href="#paike">了解班线排班 →</a>
+      </div>
+      <div class="card-x">
+        <div class="ico">📍</div>
+        <h3>行程实时跟踪</h3>
+        <p>对接主流 GPS 硬件与手机定位，车辆位置、速度、轨迹回放一目了然，异常停留自动提醒调度员。</p>
+        <a class="more" href="#jiesuan">看结算闭环 →</a>
+      </div>
+      <div class="card-x">
+        <div class="ico">💰</div>
+        <h3>费用结算与对账</h3>
+        <p>包车费、过路费、司机补贴分项记账，自动生成对账单，支持导出 Excel 与开票登记。</p>
+        <a class="more" href="#jiesuan">查看结算模块 →</a>
+      </div>
+      <div class="card-x">
+        <div class="ico">📱</div>
+        <h3>乘客与客户端</h3>
+        <p>乘客小程序端可查询班次、购票、查看车辆位置，短信通知自动推送发车与到达提醒。</p>
+        <a class="more" href="#jiemi">了解交付内容 →</a>
+      </div>
+      <div class="card-x">
+        <div class="ico">🔐</div>
+        <h3>权限与操作日志</h3>
+        <p>调度、财务、车管分角色授权，关键操作全程留痕，账目差异可追溯到具体经办人与时间。</p>
+        <a class="more" href="#faq">常见问题解答 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-mint" id="paike">
+  <div class="container">
+    <div class="sec-head">
+      <h2>大巴车强㢨thepro班线排班能力一览</h2>
+      <p>覆盖固定班线、通勤包车、旅游包车、机场接送四类主流业务形态</p>
+    </div>
+    <div class="stripes">
+      <div class="stripe-item"><b>固定班线管理</b><span>线路、站点、时刻表、票价体系完整配置，节假日加班车单独排期，售检数据实时回传。</span></div>
+      <div class="stripe-item"><b>旅游包车调度</b><span>按行程天数与景点路线配车，司机任务单自动生成，回程空驶调度智能推荐顺路单。</span></div>
+      <div class="stripe-item"><b>通勤班车排期</b><span>企业通勤线路按月排班，乘车人员名单与上车点管理，月度用车报表一键出具。</span></div>
+      <div class="stripe-item"><b>机场接送派单</b><span>航班号关联接站任务，延误信息同步调整发车时间，多批次拼车自动合并派车。</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="jiesuan">
+  <div class="container">
+    <div class="sec-head">
+      <h2>客户车队怎么用：两张真实运行台账</h2>
+      <p>以下为系统运行中的典型调度记录样例，数据已做脱敏处理</p>
+    </div>
+    <div class="rows">
+      <div class="row-card">
+        <div>
+          <div class="t">杭州 → 黄山 旅游包车 · 55 座大巴 ×2</div>
+          <div class="d">司机 张师傅 / 李师傅 · 行程 3 天 · 含过路费与司机补贴</div>
+        </div>
+        <span class="tag">旅游包车</span>
+        <span class="status-pill status-ok">行程已完成 · 待结算</span>
+        <a class="btn-sm2" href="#cta">了解同类方案</a>
+      </div>
+      <div class="row-card">
+        <div>
+          <div class="t">昆山某电子厂通勤班车 · 6 条线路月度排班</div>
+          <div class="d">固定班次 38 班/周 · 乘车员工 420 人 · 月度用车报表已生成</div>
+        </div>
+        <span class="tag">通勤班车</span>
+        <span class="status-pill status-ok">运行中</span>
+        <a class="btn-sm2" href="#cta">了解同类方案</a>
+      </div>
+      <div class="row-card">
+        <div>
+          <div class="t">机场接送拼车 · 浦东 T2 航站楼 接站任务</div>
+          <div class="d">航班延误 40 分钟 · 发车时间已自动顺延 · 拼单 3 批合并派车</div>
+        </div>
+        <span class="tag tag-red">动态调整</span>
+        <span class="status-pill">待司机确认</span>
+        <a class="btn-sm2" href="#cta">了解同类方案</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-mint" id="jiemi">
+  <div class="container">
+    <div class="sec-head">
+      <h2>大巴车强㢨thepro源码交付内容清单</h2>
+      <p>拿到的不只是代码，是能直接跑起来的完整工程</p>
+    </div>
+    <div class="card-grid">
+      <div class="card-x"><h3>后台管理端源码</h3><p>Java/PHP 双技术栈可选，工程目录完整，注释覆盖率 70% 以上，接手即可二次开发。</p></div>
+      <div class="card-x"><h3>乘客小程序端</h3><p>微信小程序前端与接口源码一并交付，品牌名、LOGO、配色可替换为自有标识。</p></div>
+      <div class="card-x"><h3>司机端 APP 源码</h3><p>任务接收、签到打卡、轨迹上报、费用拍照报销，Android 端源码开放。</p></div>
+      <div class="card-x"><h3>数据库设计文档</h3><p>全量表结构、字段说明、ER 图齐备，初始化 SQL 脚本附演示数据。</p></div>
+      <div class="card-x"><h3>部署安装脚本</h3><p>Nginx、MySQL、Redis 环境一键脚本，15 分钟完成上线，附视频部署教程。</p></div>
+      <div class="card-x"><h3>接口对接说明</h3><p>GPS 定位、短信网关、支付渠道、电子发票等第三方接口文档与示例代码。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head">
+      <h2>数字说话：上线后的变化</h2>
+      <p>来自已交付车队客户的运营反馈汇总</p>
+    </div>
+    <div class="hero-stats" style="margin-top:0">
+      <div class="stat"><b>-62%</b><span>排班人工耗时下降</span></div>
+      <div class="stat"><b>-38%</b><span>空驶率降低</span></div>
+      <div class="stat"><b>99.2%</b><span>结算账目准确率</span></div>
+      <div class="stat"><b>4.8 分</b><span>乘客端平均评分</span></div>
+    </div>
+    <div class="rows" style="margin-top:32px">
+      <div class="row-card">
+        <div><div class="t">"以前月底对账要三个人对三天，现在系统直接出单。"</div><div class="d">某旅游客运公司 · 财务主管 · 32 台车规模</div></div>
+        <span class="tag">旅游客运</span>
+      </div>
+      <div class="row-card">
+        <div><div class="t">"司机 delay、乘客投诉，后台马上能定位到是哪一环的问题。"</div><div class="d">某通勤班车服务商 · 运营经理 · 12 条线路</div></div>
+        <span class="tag">通勤班车</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-mint" id="faq">
+  <div class="container">
+    <div class="sec-head"><h2>采购前常问的几个问题</h2><p>关于源码、部署与售后，直接给答案</p></div>
+    <details class="faq-item" open>
+      <summary>源码是完全开放的吗？有没有授权限制？</summary>
+      <div class="ans">全量源码交付，无加密、无域名绑定、无功能锁。买断后可部署在自有服务器，按自有品牌对外提供服务，二次开发无需额外授权。</div>
+    </details>
+    <details class="faq-item">
+      <summary>服务器需要什么配置？</summary>
+      <div class="ans">建议 4 核 8G 云服务器起步，百台车辆规模可流畅运行。支持阿里云、腾讯云及本地机房部署，操作系统推荐 CentOS 或 Ubuntu。</div>
+    </details>
+    <details class="faq-item">
+      <summary>不会技术，能帮忙部署吗？</summary>
+      <div class="ans">提供远程部署服务，工程师全程操作直至系统跑通，并附一次管理员操作培训，部署费用按服务器环境复杂度另计。</div>
+    </details>
+    <details class="faq-item">
+      <summary>GPS 硬件和现有设备能对接吗？</summary>
+      <div class="ans">兼容部标 JT808 协议及主流 GPS 平台 API，已装设备的车辆大多可直接接入，无需重复购置硬件。</div>
+    </details>
+    <details class="faq-item">
+      <summary>后续升级和售后怎么算？</summary>
+      <div class="ans">交付后提供 12 个月免费缺陷修复与技术答疑，功能新增按需求评估报价，源码在手不依赖原厂也可自行迭代。</div>
+    </details>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>把排班表换掉，从今天这班车开始</h2>
+        <p>留个联系方式，发送演示站地址与完整功能清单，看真实后台再决定。</p>
+      </div>
+      <a class="btn-danger" href="mailto:service@dbcqht.pages.dev">索取演示与报价</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="logo-ico">巴</span>大巴车强㢨thepro</div>
+        <p style="font-size:13.5px">专注客运车队调度管理源码研发与交付，覆盖包车、班线、通勤、机场接送四大业务场景，全源码开放，助力车队数字化升级。</p>
+      </div>
+      <div>
+        <h4>产品能力</h4>
+        <ul>
+          <li><a href="#fuwu">调度管理</a></li>
+          <li><a href="#paike">班线排班</a></li>
+          <li><a href="#jiesuan">结算对账</a></li>
+          <li><a href="#jiemi">源码交付</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>业务分类</h4>
+        <ul>
+          <li><a href="#fuwu">包车调度</a></li>
+          <li><a href="#paike">班线排班</a></li>
+          <li><a href="#jiesuan">结算对账</a></li>
+          <li><a href="#jiemi">源码交付</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系方式</h4>
+        <ul>
+          <li>咨询邮箱：service@dbcqht.pages.dev</li>
+          <li>服务时间：工作日 9:00–18:00</li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 大巴车强㢨thepro · dbcqht.pages.dev · 保留所有权利</div>
+  </div>
+</footer>
+
+</body>
+</html
+<div class="copy">© 2026 大巴车强㢨thepro · dbcqht.pages.dev · 保留所有权利</div>
+  </div>
+</footer>
+
+</body>
+</html>
